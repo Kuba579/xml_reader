@@ -1,6 +1,6 @@
 xml_to_png --- version 1.0 ---
 OPIS PROJEKTU:
-xml_to_png to aplikacja typu GUI (oparta na tkinter), której zadaniem jest odczytanie pliku XML zawierającego dane obrazu w formacie base64 w odpowiednich znacznikach (<mstns:RodzajDoreczenie> lub <mstns:Rodzaj>), zdekodowanie ich i zapisanie do pliku PNG. Jest to narzędzie stworzone z myślą o użytkownikach, którzy muszą konwertować podpisy graficzne do postaci graficznej.
+xml_to_png to aplikacja typu GUI (oparta na tkinter), której zadaniem jest odczytanie pliku XML zawierającego dane obrazu w formacie base64 w odpowiednich znacznikach (<mstns:RodzajDoreczenie> lub <mstns:Rodzaj>) oraz z odpowiednim linkem który aplikajca odczytuje z pliku, zdekodowanie ich i zapisanie do pliku PNG. Jest to narzędzie stworzone z myślą o użytkownikach, którzy muszą konwertować podpisy graficzne do postaci graficznej.
 
 TECHNOLOGIE
 Język: Python 3.x
