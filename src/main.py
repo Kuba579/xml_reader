@@ -3,6 +3,7 @@ import base64
 import gui
 import os
 import ctypes
+import sys
 
 def convert(input_path: str, output_dir: str=""):
     base64_data = dr.get_base64_data(input_path)
@@ -19,7 +20,7 @@ if __name__ == "__main__":
     input_path = confirm_data["input_path"]
     output_dir = confirm_data["output_dir"]
     if not output_dir and not input_path:
-        exit()
+        sys.exit(0)
     try:
         convert(input_path, output_dir)
         remember_output_dir = "xml_to_png_data/"
