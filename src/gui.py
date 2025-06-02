@@ -74,7 +74,10 @@ def enter_directory(window: tk.Tk) -> tuple[str, str, bool]:
     enter_dirs_info.pack(pady=30)
 
     # --- close the window ---
-    window.protocol("WM_DELETE_WINDOW", exit)
+    def close_window():
+        window.destroy()
+        exit()
+    window.protocol("WM_DELETE_WINDOW", close_window)
 
     window.mainloop()
     return confirm_data
