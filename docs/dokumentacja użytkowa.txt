@@ -1,0 +1,11 @@
+xml_to_png -- version 0.1 --
+
+Jest to wersja wczesnego dostępu, więc nie wszystko może działać poprawnie. W przypadku zamknięcia aplikacji krzyżykiem na górze może wyskoczyć okienko z błędem, które należy zamknąć.
+Aby zainstalować aplikacje należy wejść w folder app/ następnie w plik xml_to_png.exe, kliknąć w trzy kropki w prawym górnym rogu strony (More file actions), a następnie "download" lub kliknąć ikonkę pobierania po prawej stronie i chwilę poczekać, po chwili aplikacja będzie gotowa, można ją przenieść w dowolne miejsce na komputerze.
+
+INSTRUKCJA UZYCIA
+1.Wpisz w pole pod "Wpisz ścieżkę do pliku XML" ścieżkę do pliku .xml lub kliknij w przycisk "Przeglądaj" i wybierz plik .xml z informacjami dotyczącymi podpisu. Pamiętaj o stosowaniu "/" przy przejściu do następnego folderu lub pliku np. folder1/folder2/folder3/plik.xml
+
+2.Wpisz w pole pod "Wpisz ścieżkę do folderu docelowego" ścieżkę do folderu lub kliknij w przycisk "Przeglądaj" i wybierz folder w którym ma pojawić się grafika png. Pamiętaj o stosowaniu "/" przy przejściu do następnego folderu np. folder1/folder2/folder3 oraz to że folder docelowy nie musi istnieć, w przypadku gdy docelowy folder nie będzie istniał automatycznie się utworzy
+
+3.Kliknij przycisk "Potwierdź". Grafika utworzy się w docelowym folderze
