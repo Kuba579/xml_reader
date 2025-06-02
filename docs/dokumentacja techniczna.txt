@@ -1,0 +1,49 @@
+xml_to_png --- version 1.0 ---
+OPIS PROJEKTU:
+xml_to_png to aplikacja typu GUI (oparta na tkinter), której zadaniem jest odczytanie pliku XML zawierającego dane obrazu w formacie base64 w odpowiednich znacznikach (<mstns:RodzajDoreczenie> lub <mstns:Rodzaj>), zdekodowanie ich i zapisanie do pliku PNG. Jest to narzędzie stworzone z myślą o użytkownikach, którzy muszą konwertować podpisy graficzne do postaci graficznej.
+
+TECHNOLOGIE
+Język: Python 3.x
+GUI: tkinter
+Kodowanie: base64
+Parser XML: xml.etree.ElementTree
+
+STRUKTURA PLIKOW W KODZIE
+xml_to_png/
+│
+├── main.py               # Główna logika aplikacji i uruchamianie GUI + konwersja
+├── gui.py                # Interfejs graficzny (okno tkinter)
+├── data_reader.py        # Odczyt danych base64 z pliku XML
+├── xml_to_png_data/
+│   └── data.txt          # Zapamiętuje ostatnio używany folder docelowy
+
+STRUKTURA PLIKOW POBRANEJ APLIKACJI
+├── xml_to_png.exe        # Aplikacja
+├── xml_to_png_data/
+│   └── data.txt          # Zapamiętuje ostatnio używany folder docelowy
+
+OPIS DZIALANIA
+Główne komponenty:
+
+main.py:
+    -Uruchamia GUI
+    -Pobiera dane z GUI
+    -Wykonuje konwersję base64 → PNG
+    -Zapisuje PNG w wybranym folderze
+    -Zapamiętuje ostatnią lokalizację wyjściową
+
+gui.py:
+    -Tworzy prosty interfejs użytkownika
+    -Umożliwia wybór pliku XML i folderu docelowego
+    -Sprawdza poprawność ścieżek
+    -Obsługuje zamknięcie okna
+
+data_reader.py:
+    -Parsuje plik XML
+    -Odczytuje wartość base64 z elementu <PodpisObraz> lub <Podpis>
+
+TESTOWANIE
+Na ten moment projekt nie zawiera zautomatyzowanych testów. Można go testować manualnie przez uruchamianie aplikacji i sprawdzanie:
+    -Czy plik XML jest poprawnie przetwarzany
+    -Czy wynikowy output.png jest tworzony we wskazanej lokalizacji
+    -Czy aplikacja poprawnie reaguje na błędne dane lub brak plików

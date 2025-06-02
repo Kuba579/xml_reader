@@ -1,5 +1,4 @@
 import xml.etree.ElementTree as ET
-import ctypes
 
 def get_base64_data(path: str):
     tree = ET.parse(path)
