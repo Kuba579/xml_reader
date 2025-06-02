@@ -9,4 +9,4 @@ INSTRUKCJA UZYCIA
 
 2.Wpisz w pole pod "Wpisz ścieżkę do folderu docelowego" ścieżkę do folderu lub kliknij w przycisk "Przeglądaj" i wybierz folder w którym ma pojawić się grafika png. Pamiętaj o stosowaniu "/" przy przejściu do następnego folderu np. folder1/folder2/folder3 oraz to że folder docelowy nie musi istnieć, w przypadku gdy docelowy folder nie będzie istniał automatycznie się utworzy
 
-3.Kliknij przycisk "Potwierdź". Grafika utworzy się w docelowym folderze
+3.Kliknij przycisk "Potwierdź". Grafika utworzy się w docelowym folderze pod nazwą output.png
