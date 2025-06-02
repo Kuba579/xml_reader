@@ -2,7 +2,7 @@ xml_to_png -- version 1.0 --
 
 Program pobiera dane base64 dotyczące grafiki png a następnie konwertuje je do pliku png.
 
-Aby zainstalować aplikacje należy wejść w folder app/ następnie w plik xml_to_png.exe, kliknąć w trzy kropki w prawym górnym rogu strony (More file actions), a następnie "download" lub kliknąć ikonkę pobierania po prawej stronie i chwilę poczekać, po chwili aplikacja będzie gotowa, można ją przenieść w dowolne miejsce na komputerze.
+Aby zainstalować aplikację należy wejść w folder app/ następnie pobrać plik xml_to_png.exe, aplikację można przenieść w dowolne miejsce na komputerze.
 
 INSTRUKCJA UZYCIA
 1.Wpisz w pole pod "Wpisz ścieżkę do pliku XML" ścieżkę do pliku .xml lub kliknij w przycisk "Przeglądaj" i wybierz plik .xml z informacjami dotyczącymi podpisu. Pamiętaj o stosowaniu "/" przy przejściu do następnego folderu lub pliku np. folder1/folder2/folder3/plik.xml

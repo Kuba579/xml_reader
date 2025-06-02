@@ -8,7 +8,7 @@ GUI: tkinter
 Kodowanie: base64
 Parser XML: xml.etree.ElementTree
 
-STRUKTURA PLIKOW W KODZIE
+STRUKTURA PLIKÓW W KODZIE
 xml_to_png/
 │
 ├── main.py               # Główna logika aplikacji i uruchamianie GUI + konwersja
@@ -17,12 +17,12 @@ xml_to_png/
 ├── xml_to_png_data/
 │   └── data.txt          # Zapamiętuje ostatnio używany folder docelowy
 
-STRUKTURA PLIKOW POBRANEJ APLIKACJI
+STRUKTURA PLIKÓW POBRANEJ APLIKACJI
 ├── xml_to_png.exe        # Aplikacja
 ├── xml_to_png_data/
 │   └── data.txt          # Zapamiętuje ostatnio używany folder docelowy
 
-OPIS DZIALANIA
+OPIS DZIAŁANIA
 Główne komponenty:
 
 main.py:
