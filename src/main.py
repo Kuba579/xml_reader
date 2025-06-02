@@ -22,5 +22,9 @@ if __name__ == "__main__":
         exit()
     try:
         convert(input_path, output_dir)
+        remember_output_dir = "xml_to_png_data/"
+        os.makedirs(remember_output_dir) if not os.path.exists(remember_output_dir) else None
+        with open("xml_to_png_data/data.txt", "w") as f:
+            f.write(output_dir)
     except:
         ctypes.windll.user32.MessageBoxW(0, "Wystąpił błąd przy konwersji!", "Błąd", 0x10)

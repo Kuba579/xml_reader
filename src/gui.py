@@ -47,6 +47,13 @@ def enter_directory(window: tk.Tk) -> tuple[str, str, bool]:
     output_dir.pack(side=tk.LEFT)
     output_dir_button.pack(side=tk.RIGHT)
 
+    if os.path.exists("xml_to_png_data/data.txt"):
+        with open("xml_to_png_data/data.txt", "r") as f:
+            last_output_dir = f.read()
+            if os.path.exists(last_output_dir):
+                confirm_data["output_dir"] = last_output_dir
+                output_dir.insert(0, last_output_dir)
+
     # --- confirm button ---
     def confirm_button_command():
         if input_dir.get() == "" or output_dir.get() == "":
@@ -65,6 +72,9 @@ def enter_directory(window: tk.Tk) -> tuple[str, str, bool]:
 
     enter_dirs_info = tk.Label(window, text="")
     enter_dirs_info.pack(pady=30)
+
+    # --- close the window ---
+    window.protocol("WM_DELETE_WINDOW", exit)
 
     window.mainloop()
     return confirm_data
